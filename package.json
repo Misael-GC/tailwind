@@ -4,7 +4,10 @@
   "description": "tailwind css explorar",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --watch",
+    "prod": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
   },
   "keywords": [
     "css",
@@ -13,8 +16,13 @@
   "author": "Misael Gomez Cuautle",
   "license": "MIT",
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
+  },
+  "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
+    "@tailwindcss/forms": "^0.5.2"
   }
 }
