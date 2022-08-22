@@ -10,15 +10,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"/>
   </head>
-  <body>
+  <body class="font-Montserrat">
       <nav></nav>
       <div id="tabBar"></div>
       <section class="w-full h-screen">
           <div id="home">
             <div class="w-full h-3/4">
               <div class="w-full h-full flex flex-col absolute space-y-96 py-4 items-center">
-                <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm" placeholder="San Francisco">
-                <button class="w-36 rounded-full text-primary text-xl font-semibold p-4 bg-white shadow-sm">
+                <input type="search" name="" id="" class="outline-none p-3 rounded-full shadow-sm transition duration-300 focus-within::shadow-sm focus:ring-2 focus:w-11/12" placeholder="San Francisco">
+                <button class="w-48 rounded-full text-primary text-lg font-semibold p-4 bg-white shadow-sm transition transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110">
                   Explorar
                 </button>
               </div>
@@ -27,13 +27,80 @@
               </div>
             </div>
           </div>
-          <div class="p-20" id="recomendadas">
-            <div class="Card">
-              <div class="Image bg-norway"></div>
-              <div class="Info bg-secondary">
-                <p class="Country">Norway</p>
-                <p class="Desc">Paisajes Increíbles</p> 
+          <div class="p-6" id="recomendados">
+            <p class="text-3xl font-semibold text-primary mt-6">Recomendados</p>
+            <div class="w-auto h-72 items-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-4 overflow-y-hidden">
+              
+              <div class="Card">
+                <div class="Image bg-norway"></div>
+                <div class="Info bg-secondary">
+                  <p class="Country text-white ">Norway</p>
+                  <p class="Desc text-white ">Paisajes Increíbles</p> 
+                </div>
               </div>
+
+              <div class="Card">
+                <div class="Image bg-new_york"></div>
+                <div class="Info bg-white">
+                  <p class="Country text-terciary">New York</p>
+                  <p class="Desc text-terciary">La gran manzana </p> 
+                </div>
+
+              </div>
+
+              <!-- cards v2 -->
+                            
+              <div class="Card">
+                <div class="Image bg-sanFrancisco"></div>
+                <div class="Info bg-primary">
+                  <p class="Country text-white ">San Francisco</p>
+                  <p class="Desc text-white ">Experiencia inolvidable</p> 
+                </div>
+              </div>
+
+                            
+              <div class="Card">
+                <div class="Image bg-seattle"></div>
+                <div class="Info bg-terciary">
+                  <p class="Country text-white ">Seattle</p>
+                  <p class="Desc text-white ">Industria Tecnológica</p>
+                </div>
+              </div>
+                            
+              <!-- version 3  -->
+              <div class="Card">
+                <div class="Image bg-LA"></div>
+                <div class="Info bg-secondary">
+                  <p class="Country text-white ">LA</p>
+                  <p class="Desc text-white ">Ciudad exotica</p> 
+                </div>
+              </div>
+
+              <div class="Card">
+                <div class="Image bg-yosemite"></div>
+                <div class="Info bg-white">
+                  <p class="Country text-terciary">Yosemite</p>
+                  <p class="Desc text-terciary">Paisajes de calma</p>
+                </div>
+              </div>
+                            
+              <div class="Card">
+                <div class="Image bg-miami"></div>
+                <div class="Info bg-primary">
+                  <p class="Country text-white ">Miami</p>
+                  <p class="Desc text-white ">Experiencia inolvidable</p> 
+                </div>
+              </div>
+
+                            
+              <div class="Card">
+                <div class="Image bg-switzerland"></div>
+                <div class="Info bg-terciary">
+                  <p class="Country text-white ">Switzerland</p>
+                  <p class="Desc text-white ">Paisajes inolvidables</p>
+                </div>
+              </div>
+
             </div>
           </div>
           <div id="rentas_destacadas"></div>

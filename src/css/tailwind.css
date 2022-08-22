@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 .Card{
-    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden
+    @apply w-48 h-64 shadow-md rounded-lg overflow-hidden flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl
 }
 
 .Image{
@@ -16,9 +16,9 @@
 }
 
 .Country{
-    @apply text-white font-bold text-lg px-4 py-2
+    @apply font-bold text-lg px-4 py-2
 }
 
 .Desc{
-    @apply text-white text-base px-4
+    @apply text-base px-4
 }
