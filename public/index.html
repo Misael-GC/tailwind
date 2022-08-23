@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
         </div>
         
         <div class="p-6" id="recomendados">
-            <p class="text-3xl font-semibold text-primary">Recomendados</p>
+            <p class="text-3xl font-semibold text-primary mt-4">Recomendados</p>
             <div class="w-auto h-72 items-center mt-6 overflow-x-auto flex overscroll-x-contain space-x-6 overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
@@ -131,7 +131,46 @@
             </div>
         </div>
     </section>
-
+    <div class="flex items-center justify-center min-h-screen bg-gray-100" id="user">
+        <div class="px-8 py-6 mx-4 mt-4 text-left bg-white shadow-lg md:w-1/3 lg:w-1/3 sm:w-1/3">
+            <h3 class="text-2xl font-bold text-center">Join us</h3>
+            <form action="">
+                <div class="mt-4">
+                    <div>
+                        <label class="block" for="Name">Name<label>
+                                <input type="text" placeholder="Name"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block" for="email">Email<label>
+                                <input type="text" placeholder="Email"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block">Password<label>
+                                <input type="password" placeholder="Password"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <div class="mt-4">
+                        <label class="block">Confirm Password<label>
+                                <input type="password" placeholder="Password"
+                                    class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
+                    </div>
+                    <span class="text-xs text-red-400">Password must be same!</span>
+                    <div class="flex">
+                        <a class="w-full px-6 py-2 text-center mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900" href="./index.html">Create
+                            Account</a>
+                    </div>
+                    <div class="mt-6 text-grey-dark">
+                        Already have an account?
+                        <a class="text-blue-600 hover:underline" href="./index.html">
+                            Log in
+                        </a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <footer class="w-full h-auto bg-gray-50 p-6 space-y-2 mt-6 mb-14 lg:mb-0">
         <p class="text-lg">Acerca De</p>
         <p class="text-sm text-gray-300">Inversionistas</p>
@@ -166,7 +205,7 @@
             </svg>
             
         </button>
-        <a href="#">
+        <a href="#user">
           <svg width="30" height="30" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-200" fill-rule="evenodd" clip-rule="evenodd" d="M2.78225 17.6464C4.4799 15.2799 7.48651 13.4999 12.4999 13.4999C17.5132 13.4999 20.5199 15.2799 22.2175 17.6464C23.8582 19.9336 24.1196 22.5552 24.1248 24.0058C24.13 25.4645 22.9071 26.4166 21.6533 26.4166H3.34642C2.09262 26.4166 0.869709 25.4645 0.874956 24.0058C0.880174 22.5552 1.1415 19.9336 2.78225 17.6464Z" fill="#F2F2F2"/>
             <path class="fill-current text-gray-200" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10.9166C15.3535 10.9166 17.6667 8.60339 17.6667 5.74992C17.6667 2.89645 15.3535 0.583252 12.5 0.583252C9.64653 0.583252 7.33334 2.89645 7.33334 5.74992C7.33334 8.60339 9.64653 10.9166 12.5 10.9166Z" fill="#F2F2F2"/>
