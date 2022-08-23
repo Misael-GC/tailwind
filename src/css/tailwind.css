@@ -26,3 +26,16 @@
 .CardTitle{
     @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white
 }
+
+.Card-rentas{
+    @apply w-full h-96 bg-chicago bg-cover rounded-xl
+}
+
+.Card-renta-p{
+    @apply text-sm pl-8 text-black mr-24
+}
+
+.Politcas-title{
+    @apply text-xl font-medium text-primary
+}
+
