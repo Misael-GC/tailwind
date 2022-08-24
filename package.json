@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --watch",
     "prod": "npx tailwindcss -i ./src/tailwind.css -o ./dist/tailwind.css --minify",
-    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch"
+    "tw:build": "tailwind -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "deploy": "gh-pages -d public"
   },
   "keywords": [
     "css",
@@ -18,6 +19,7 @@
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.4",
     "autoprefixer": "^10.4.8",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
   },
